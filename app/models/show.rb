@@ -11,3 +11,4 @@ def actors_list
   show.characters << character
   show.save
 end
+end 
