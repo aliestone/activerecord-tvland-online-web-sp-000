@@ -5,10 +5,6 @@ class Show < ActiveRecord::Base
   has_many :actors, through: :characters
 
 def actors_list
-  show = Show.name
-  character = Character.new
-  full_name = Actor.new
-  show.character << character
-  show.save
+  self.actors.map {|actor| actor.full_name}
 end
 end
