@@ -8,7 +8,7 @@ def actors_list
   show = Show.name
   character = Character.new
   full_name = Actor.new
-  show.characters << character
+  show.character << character
   show.save
 end
-end 
+end
